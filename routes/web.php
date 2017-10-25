@@ -16,3 +16,4 @@ Route::get('/ftambah', 'TodoController@ftambah_data');
 Route::post('/add', 'TodoController@add');
 Route::get('/fedit/{id}', 'TodoController@fedit_data');
 Route::post('/update/{id}', 'TodoController@update');
+Route::get('/delete/{id}', 'TodoController@delete');

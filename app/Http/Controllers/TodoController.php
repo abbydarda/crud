@@ -38,4 +38,10 @@ class TodoController extends Controller
       $updatelist->save();
       return redirect('/');
     }
+    public function delete($id)
+    {
+      $deletelist = Crud::find($id);
+      $deletelist->delete();
+      return redirect('/');
+    }
 }

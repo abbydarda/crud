@@ -20,7 +20,7 @@
             <td><?php echo $no++;?></td>
             <td><?php echo $row->jam;?></td>
             <td><?php echo $row->nama_kegiatan;?></td>
-            <td><a href="/fedit/<?php echo $row->id;?>">Edit</a> | <a href="/hapus">Hapus</a></td>
+            <td><a href="/fedit/<?php echo $row->id;?>">Edit</a> | <a href="/delete/<?php echo $row->id;?>">Hapus</a></td>
           </tr>
         <?php endforeach; ?>
       </tbody>
