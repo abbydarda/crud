@@ -10,15 +10,15 @@
         <tr>
           <th>No</th>
           <th>Nama Kegiatan</th>
-          <th>Tambah</th>
+          <th><a href="/ftambah">Tambah</a></th>
         </tr>
       </thead>
       <tbody>
         <?php $no=1; foreach ($list as $row): ?>
           <tr>
-            <td><?php echo $no;?></td>
+            <td><?php echo $no++;?></td>
             <td><?php echo $row->nama_kegiatan;?></td>
-            <td>update|delete</td>
+            <td><a href="">Edit</a> | <a href="#">Hapus</a></td>
           </tr>
         <?php endforeach; ?>
       </tbody>

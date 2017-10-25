@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'TodoController@index');
+Route::get('/ftambah', 'TodoController@ftambah_data');
+Route::post('/add', 'TodoController@add');

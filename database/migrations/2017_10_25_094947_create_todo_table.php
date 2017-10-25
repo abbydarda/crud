@@ -17,7 +17,8 @@ class CreateTodoTable extends Migration
             $table->increments('id');
             $table->string('jam');
             $table->string('nama_kegiatan');
-        });
+            $table->timestamps();
+            });
     }
 
     /**
