@@ -14,3 +14,5 @@
 Route::get('/', 'TodoController@index');
 Route::get('/ftambah', 'TodoController@ftambah_data');
 Route::post('/add', 'TodoController@add');
+Route::get('/fedit/{id}', 'TodoController@fedit_data');
+Route::post('/update/{id}', 'TodoController@update');

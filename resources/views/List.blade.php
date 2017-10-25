@@ -9,6 +9,7 @@
       <thead>
         <tr>
           <th>No</th>
+          <th>Jam Kegiatan</th>
           <th>Nama Kegiatan</th>
           <th><a href="/ftambah">Tambah</a></th>
         </tr>
@@ -17,8 +18,9 @@
         <?php $no=1; foreach ($list as $row): ?>
           <tr>
             <td><?php echo $no++;?></td>
+            <td><?php echo $row->jam;?></td>
             <td><?php echo $row->nama_kegiatan;?></td>
-            <td><a href="">Edit</a> | <a href="#">Hapus</a></td>
+            <td><a href="/fedit/<?php echo $row->id;?>">Edit</a> | <a href="/hapus">Hapus</a></td>
           </tr>
         <?php endforeach; ?>
       </tbody>
